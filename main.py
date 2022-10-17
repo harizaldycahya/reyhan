@@ -49,7 +49,7 @@ def get_detection_folder():
 if __name__ == '__main__':
 
     st.markdown(hidemenu,unsafe_allow_html=True)
-    st.title('Bacteria Colony Counter')
+    st.title('Ferrisia Detector')
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights', nargs='+', type=str,
@@ -105,7 +105,7 @@ if __name__ == '__main__':
 
     if is_valid:
         print('valid')
-        if st.button('Counting'):
+        if st.button('Detect'):
 
             # detect(opt)
             main(opt)
